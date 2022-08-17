@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Piedra papel o tijera</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <span class="title">Bienvenido a piedra, papel o tijera</span>
+        <p>Por favor seleccione una opción para comenzar la partida</p>
+
+        <div id="buttons">
+          <button onclick="play(this)" class="selection" value="Piedra">
+            <ion-icon name="cube"></ion-icon>
+            <span>Piedra</span>
+          </button>
+          <button onclick="play(this)" class="selection" value="Papel">
+            <ion-icon name="document"></ion-icon>
+            <span>Papel</span>
+          </button>
+          <button onclick="play(this)" class="selection" value="Tijera">
+            <ion-icon name="cut"></ion-icon>
+            <span>Tijera</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- ion icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+     <!-- sweet alert -->
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="sweetalert.js"></script>
+  </body>
+</html>
